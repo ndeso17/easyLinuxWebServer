@@ -1,0 +1,11 @@
+ifconfig wlan0 inet del 192.168.2.3
+ifconfig wlan0 inet del 192.168.2.4
+ifconfig wlan0 inet del 192.168.2.5
+ifconfig wlan0 inet del 192.168.2.6
+ifconfig wlan0 inet del 192.168.2.7
+ifconfig wlan0 inet6 del 2001:6b68:696c:6d79:746b:6a73:6174:75/64
+ifconfig wlan0 inet6 del 2001:6b68:696c:6d79:746b:6a73:6174:76
+ifconfig wlan0 inet6 del 2001:6b68:696c:6d79:746b:6a73:6174:77
+ifconfig wlan0 inet6 del 2001:6b68:696c:6d79:746b:6a73:6174:78
+ifconfig wlan0 inet6 del 2001:6b68:696c:6d79:746b:6a73:6174:79
+ifconfig

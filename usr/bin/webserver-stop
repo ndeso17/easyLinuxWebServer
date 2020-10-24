@@ -1,0 +1,9 @@
+service apache2 stop
+service mysql stop
+service bind9 stop
+service postfix stop
+service dovecot stop
+delip
+rm /etc/resolv.conf
+mv /etc/resolv/resolv.conf /etc/
+cat /etc/resolv.conf

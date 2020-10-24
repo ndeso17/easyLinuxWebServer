@@ -1,0 +1,10 @@
+service apache2 start
+service mysql start
+service bind9 start
+service postfix start
+service dovecot start
+rm /etc/resolv/resolv.conf
+mv /etc/resolv.conf /etc/resolv/
+cp /etc/resolv/resolv.conf.d/resolv.conf /etc/
+addip
+cat /etc/resolv.conf

@@ -1,0 +1,5 @@
+service apache2 restart
+service mysql restart
+service bind9 restart
+service postfix restart
+service dovecot restart
