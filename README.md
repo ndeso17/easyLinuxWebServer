@@ -1,3 +1,3 @@
 # easyLinuxWebServer
-Unstable. 
-Amatiran Project
+Unstable. </br>
+<i>Amatiran Project</i>
