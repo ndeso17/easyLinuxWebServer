@@ -1,2 +1,3 @@
 # easyLinuxWebServer
 Unstable. 
+Amatiran Project
