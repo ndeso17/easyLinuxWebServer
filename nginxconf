@@ -1,0 +1,26 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name namaDomain;
+    root /var/www/html;
+    index index.php index.html index.nginx-debian.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+
+        location ~ \.php$ {
+            include snippets/fastcgi-php.conf;
+            fastcgi_pass 127.0.0.1:9000;  # Sesuaikan ini dengan alamat dan port P>
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_param HTTP_HOST $host;
+            fastcgi_param HTTP_REFERER $http_referer;
+            fastcgi_param HTTP_USER_AGENT $http_user_agent;
+            fastcgi_param HTTPS $https;
+            add_header Content-Type text/html;
+            include fastcgi_params;
+        }
+    }
+
+    error_log /var/log/nginx/namaDomain_error.log;
+    access_log /var/log/nginx/namaDomain_access.log;
+}
